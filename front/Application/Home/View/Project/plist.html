@@ -1,0 +1,45 @@
+<layout name="Common/layout"/>
+<div class="content">
+
+    <div class="module">
+        <div class="module-head">
+            <h3>项目列表</h3>
+        </div>
+        <div class="module-body">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>业务员</th>
+                    <th>报备日期</th>
+                    <th>联系人</th>
+                    <th>联系电话</th>
+                    <th>项目地址</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <volist  name="projects" id="row">
+                    <tr>
+                        <td>{$i}</td>
+                        <td>李健</td>
+                        <td>{$row.report_time}</td>
+                        <td>{$row.contact}</td>
+                        <td>{$row.contact_tel}</td>
+                        <td>{$row.address}</td>
+                        <td>
+                            <a href="#" class="small" title="查看" data-id="{$row.id}">
+                                <i class="icon-search"></i>
+                            </a>
+                            <a href="#" class="small" style="margin-left: 5px;" title="删除">
+                                <i class="icon-remove"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </volist >
+                </tbody>
+            </table>
+        </div>
+    </div><!--/.module-->
+
+</div><!--/.content-->

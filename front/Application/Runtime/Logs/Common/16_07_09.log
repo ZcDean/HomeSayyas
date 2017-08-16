@@ -1,0 +1,12 @@
+[ 2016-07-09T09:07:10+08:00 ] 127.0.0.1 /Charge/index.php/Charge/index.php/Home/Login/logout.%E5%AF%86%E7%A0%81%E4%BF%AE%E6%94%B9%E6%88%90%E5%8A%9F%EF%BC%8C%E8%AF%B7%E9%87%8D%E6%96%B0%E7%99%BB%E5%BD%95%EF%BC%81.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:Charge
+
+[ 2016-07-09T09:09:29+08:00 ] 127.0.0.1 /Charge/index.php/Charge/index.php/Home/Login/logout.%E5%AF%86%E7%A0%81%E4%BF%AE%E6%94%B9%E6%88%90%E5%8A%9F%EF%BC%8C%E8%AF%B7%E9%87%8D%E6%96%B0%E7%99%BB%E5%BD%95%EF%BC%81.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Charge
+

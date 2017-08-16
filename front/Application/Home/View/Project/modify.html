@@ -1,0 +1,69 @@
+<layout name="Common/layout"/>
+
+<div class="content">
+
+    <div class="module">
+        <div class="module-head">
+            <h3>添加项目进度</h3>
+        </div>
+        <div class="module-body">
+            <form class="form-horizontal row-fluid">
+                <div class="control-group">
+                    <label class="control-label" for="saleman">业务员</label>
+                    <div class="controls">
+                        <input type="text" id="saleman"  class="span8" readonly value="李建" >
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="report_time">报备日期</label>
+                    <div class="controls">
+                        <input type="date" id="report_time"  class="span8" required>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="contact">联系人</label>
+                    <div class="controls">
+                        <input type="text" id="contact"  class="span8" placeholder="联系人姓名" required>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="contact_number">联系电话</label>
+                    <div class="controls">
+                        <input type="tel" id="contact_number"  class="span8" placeholder="联系人电话" required>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="project">项目</label>
+                    <div class="controls">
+                        <select tabindex="1"  id="project" class="span8" required>
+                            <option value="">请选择要更新的项目</option>
+                            <option value="Category 1">First Row</option>
+                            <option value="Category 2">Second Row</option>
+                            <option value="Category 3">Third Row</option>
+                            <option value="Category 4">Fourth Row</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="content">详细内容</label>
+                    <div class="controls">
+                        <textarea class="span8" id="content" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <button type="submit" class="btn btn-primary">确认添加</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</div><!--/.content-->
