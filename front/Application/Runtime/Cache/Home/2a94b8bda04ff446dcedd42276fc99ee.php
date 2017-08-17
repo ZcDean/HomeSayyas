@@ -4,13 +4,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>项目首页</title>
-    <link type="text/css" href="/Sayyas/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" href="/Sayyas/Public/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link type="text/css" href="/Sayyas/Public/css/theme.css" rel="stylesheet">
-    <link type="text/css" href="/Sayyas/Public/images/icons/css/font-awesome.css" rel="stylesheet">
-    <script src="/Sayyas/Public/scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="/Sayyas/Public/scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
-    <script src="/Sayyas/Public/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <link type="text/css" href="/sayyas/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="/sayyas/Public/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link type="text/css" href="/sayyas/Public/css/theme.css" rel="stylesheet">
+    <link type="text/css" href="/sayyas/Public/images/icons/css/font-awesome.css" rel="stylesheet">
+    <script src="/sayyas/Public/scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="/sayyas/Public/scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+    <script src="/sayyas/Public/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <body>
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -64,9 +64,9 @@
             <div class="span3">
                 <div class="sidebar">
     <ul class="widget widget-menu unstyled">
-        <li><a href="/Sayyas/index.php/Home/Index/index" class="<?php echo ($index); ?>"><i class="menu-icon icon-dashboard "></i>首页</a></li>
-        <li><a href="/Sayyas/index.php/Home/Project/plist" class="<?php echo ($project); ?>"><i class="menu-icon icon-list "></i> 项目列表 </a></li>
-        <li><a href="/Sayyas/index.php/Home/Project/modify" class="<?php echo ($modify); ?>"><i class="menu-icon icon-plus"></i> 添加进度 </a></li>
+        <li><a href="/sayyas/index.php/Home/Index/index" class="<?php echo ($index); ?>"><i class="menu-icon icon-dashboard "></i>首页</a></li>
+        <li><a href="/sayyas/index.php/Home/Project/plist" class="<?php echo ($project); ?>"><i class="menu-icon icon-list "></i> 在跟项目 </a></li>
+        <li><a href="/sayyas/index.php/Home/Project/modify" class="<?php echo ($modify); ?>"><i class="menu-icon icon-plus"></i> 项目跟进 </a></li>
         <!--<li><a href=""><i class="menu-icon icon-inbox"></i>Inbox <b class="label green pull-right">-->
             <!--11</b> </a></li>-->
     </ul>
@@ -460,7 +460,7 @@
     </div>
     <!--/.module-->
 </div>
-<script src="/Sayyas/Public/scripts/datatables/jquery.dataTables.js" type="text/javascript"></script>
+<script src="/sayyas/Public/scripts/datatables/jquery.dataTables.js" type="text/javascript"></script>
             </div>
         </div>
     </div>

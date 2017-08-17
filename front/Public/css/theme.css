@@ -10,7 +10,7 @@ body {
 	font-size: 15px;
 	font-family: 'Menlo', Arial, sans-serif;
 	background: #fff;
-	color: #777
+	color: #000000
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #333;
@@ -668,7 +668,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 	text-shadow: 1px 1px 2px #ddd, 0 0 0 #000, 0 0 1px #fff
 }
 .modal-backdrop, .modal-backdrop.fade.in {
-	background: #fff;
+	background: rgba(15, 15, 15, 0.65);
 	opacity: .9
 }
 .accordion-group {
@@ -1705,4 +1705,60 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 td a:hover{
 	text-decoration: none;
 	color: #ff5b5d;
+}
+.time-tree:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+.time-left,.time-right{
+	line-height:50px;
+	box-sizing: border-box;
+	position: relative;
+}
+.time-left{
+	width: 15%;
+	overflow: hidden;
+	float: left;
+}
+.time-right{
+	width: 80%;
+	float: left;
+	padding-left: 3%;
+}
+.time-right:after{
+	content: '';
+	display: block;
+	width: 4px;
+	height: 100%;
+	position: absolute;
+	left: -2px;
+	top: 0;
+	background: #99c75d;
+	z-index: 2;
+}
+.time-right:before{
+	content: '';
+	display: block;
+	width: 14px;
+	height:14px;
+	position: absolute;
+	background: #fff;
+	border: 2px solid #99c75d;
+	border-radius: 20px;
+	left: -10px;
+	top: 18px;
+	z-index: 3;
+}
+.schedules{
+	margin-bottom: 13px;
+}
+.schedule-plus{
+	margin: 0 5px;
+	color: #f00;
+	cursor:pointer;
+}
+.schedule-delete{
+	color: #f00;
+	cursor:pointer;
 }

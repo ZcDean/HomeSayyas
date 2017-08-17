@@ -3,7 +3,7 @@
 
     <div class="module">
         <div class="module-head">
-            <h3>项目列表</h3>
+            <h3>参与列表</h3>
         </div>
         <div class="module-body">
             <table class="table table-bordered">
@@ -28,10 +28,10 @@
                         <td>{$row.contact_tel}</td>
                         <td>{$row.address}</td>
                         <td>
-                            <a href="#" class="small" title="查看" data-id="{$row.id}">
+                            <a href="__MODULE__/Project/modify?project_id={$row.id}" class="small" title="查看">
                                 <i class="icon-search"></i>
                             </a>
-                            <a href="#" class="small" style="margin-left: 5px;" title="删除">
+                            <a href="#" class="small pro-del" style="margin-left: 5px;" title="删除" data-id="{$row.id}">
                                 <i class="icon-remove"></i>
                             </a>
                         </td>
@@ -43,3 +43,4 @@
     </div><!--/.module-->
 
 </div><!--/.content-->
+<script src="__PUBLIC__/js/plist.js" type="text/javascript"></script>

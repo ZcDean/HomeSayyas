@@ -11,6 +11,9 @@
     <script src="/Sayyas/Public/scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="/Sayyas/Public/scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
     <script src="/Sayyas/Public/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+        var module_url = "/Sayyas/index.php/Home";
+    </script>
 <body>
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -65,10 +68,22 @@
                 <div class="sidebar">
     <ul class="widget widget-menu unstyled">
         <li><a href="/Sayyas/index.php/Home/Index/index" class="<?php echo ($index); ?>"><i class="menu-icon icon-dashboard "></i>首页</a></li>
-        <li><a href="/Sayyas/index.php/Home/Project/plist" class="<?php echo ($project); ?>"><i class="menu-icon icon-list "></i> 项目列表 </a></li>
-        <li><a href="/Sayyas/index.php/Home/Project/modify" class="<?php echo ($modify); ?>"><i class="menu-icon icon-plus"></i> 添加进度 </a></li>
+        <li><a class="collapsed" data-toggle="collapse" href="#project_noing"><i class="menu-icon icon-beaker"></i>
+            <i class="icon-chevron-down pull-right"></i><i class="icon-chevron-up pull-right"></i>业务体系</a>
+            <ul id="project_noing" class="collapse unstyled">
+                <li><a href="/Sayyas/index.php/Home/Project/modify"><i class="icon-plus"></i>添加业务</a></li>
+                <li><a href="/Sayyas/index.php/Home/Project/plist"><i class="icon-list"></i>业务列表</a></li>
+            </ul>
+        </li>
+        <li><a class="collapsed" data-toggle="collapse" href="#project_ing"><i class="menu-icon icon-envelope"></i>
+            <i class="icon-chevron-down pull-right"></i><i class="icon-chevron-up pull-right"></i>项目体系</a>
+            <ul id="project_ing" class="collapse unstyled">
+                <li><a href=""><i class="icon-plus"></i>添加 </a></li>
+                <li><a href=""><i class="icon-list"></i>列表 </a></li>
+            </ul>
+        </li>
         <!--<li><a href=""><i class="menu-icon icon-inbox"></i>Inbox <b class="label green pull-right">-->
-            <!--11</b> </a></li>-->
+        <!--11</b> </a></li>-->
     </ul>
     <ul class="widget widget-menu unstyled">
         <li><a class="collapsed" data-toggle="collapse" href="#togglePages"><i class="menu-icon icon-cog">
@@ -90,7 +105,7 @@
 
     <div class="module">
         <div class="module-head">
-            <h3>项目列表</h3>
+            <h3>参与列表</h3>
         </div>
         <div class="module-body">
             <table class="table table-bordered">
@@ -114,10 +129,10 @@
                         <td><?php echo ($row["contact_tel"]); ?></td>
                         <td><?php echo ($row["address"]); ?></td>
                         <td>
-                            <a href="#" class="small" title="查看" data-id="<?php echo ($row["id"]); ?>">
+                            <a href="/Sayyas/index.php/Home/Project/modify?project_id=<?php echo ($row["id"]); ?>" class="small" title="查看">
                                 <i class="icon-search"></i>
                             </a>
-                            <a href="#" class="small" style="margin-left: 5px;" title="删除">
+                            <a href="#" class="small pro-del" style="margin-left: 5px;" title="删除" data-id="<?php echo ($row["id"]); ?>">
                                 <i class="icon-remove"></i>
                             </a>
                         </td>
@@ -128,10 +143,26 @@
     </div><!--/.module-->
 
 </div><!--/.content-->
+<script src="/Sayyas/Public/js/plist.js" type="text/javascript"></script>
 
             </div>
         </div>
     </div>
 </div>
-
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">系统提示</h4>
+            </div>
+            <div class="modal-body" id="modifytoast">本次信息添加成功</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="modal_sure" style="display:none">确认</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
 </body>

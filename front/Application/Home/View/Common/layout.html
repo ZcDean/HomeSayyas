@@ -11,6 +11,9 @@
     <script src="__PUBLIC__/scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
     <script src="__PUBLIC__/scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
     <script src="__PUBLIC__/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script>
+        var module_url = "__MODULE__";
+    </script>
 <body>
 <include file="Common/header"/>
 
@@ -26,6 +29,21 @@
         </div>
     </div>
 </div>
-
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">系统提示</h4>
+            </div>
+            <div class="modal-body" id="modifytoast">本次信息添加成功</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="modal_sure" style="display:none">确认</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
 </body>
 
